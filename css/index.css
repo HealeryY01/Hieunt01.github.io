@@ -16,41 +16,7 @@
     background: #e4555b;
     z-index: 1;
 }
-@media screen and (max-width:576px) {
-    .khoitt1:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 195px;
-        width: 50%;
-        height: 100%;
-        background: #e4555b;
-        z-index: 1;
-    }
-    .tt  img{
-        width: 200px;
-       margin-top: -70px;
-    }
-    .tt h2{
-         font-size: 40px;
-         text-transform: uppercase;
-         color: white;
-         margin-bottom: 22px;
-    }
-    .tt p{
-      font-size: 16px;
-      line-height: 24px;
-      width: 36%;
-      margin: auto;
-      margin-bottom: 34px;
-    }
-    a.nuthire.btn.btn-primary {
-        width: 180px;
-        background: black;
-        border: none;
-        border-radius: 0;
-    }
-}
+
 body, html {
     width: 100%;
     height: 100%;
@@ -95,4 +61,91 @@ a.nuthire.btn.btn-primary {
     background: black;
     border: none;
     border-radius: 0;
+}
+.tieudeto{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.tieudeto h1{
+    display: inline;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.line{
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 65px;
+    margin-top: 10px;
+}
+.tieudecap2{
+ font-weight: 300;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ text-transform: uppercase;
+ font-size: 18px;
+ margin-bottom: 20px;
+}
+.dam{
+     font-weight: bold;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.khoithongtin .tieudecap3{
+    font-size: 16px;
+    color: #e4555b;
+    margin-bottom: 10px;
+}
+.khoithongtin .motaqt{
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+}
+.khoithongtin p{
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(16, 16, 16, 0.664);
+}
+@media screen and (max-width:576px) {
+    .khoitt1:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 195px;
+        width: 50%;
+        height: 100%;
+        background: #e4555b;
+        z-index: 1;
+    }
+    .tt  img{
+        width: 200px;
+       margin-top: -70px;
+    }
+    .tt h2{
+         font-size: 40px;
+         text-transform: uppercase;
+         color: white;
+         margin-bottom: 22px;
+    }
+    .tt p{
+      font-size: 16px;
+      line-height: 24px;
+      width: 36%;
+      margin: auto;
+      margin-bottom: 34px;
+    }
+    a.nuthire.btn.btn-primary {
+        width: 180px;
+        background: black;
+        border: none;
+        border-radius: 0;
+    }
+    .tieudeto h1{
+        font-size: 20px;
+       text-align: center; 
+       display: block;
+    }
+    .tieudecap2{
+        margin-top: 10px;
+    }
 }
