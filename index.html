@@ -30,23 +30,23 @@
           <a class="navbar-brand" href="#"
             ><img src="./img/pinterest_profile_image.png" alt="Logo-Healer"
           /></a>
-          <ul class="nav navbar-nav float-xs-right">
+          <ul class="nav navbar-nav float-xs-right" id="mainNav">
             <li class="nav-item active">
               <a class="nav-link" href="#"
                 >Giới Thiệu <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kinh nghiệm</a>
+              <a class="nav-link" href="#kn">Kinh nghiệm</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sản phẩm</a>
+              <a class="nav-link" href="#sp">Sản phẩm</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Thông Tin Liên Hệ </a>
+              <a class="nav-link" href="#tt">Thông Tin Liên Hệ </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Comment</a>
+              <a class="nav-link" href="#cm">Comment</a>
             </li>
           </ul>
         </div>
@@ -61,34 +61,35 @@
           <p>Tích lũy kiến thức, nâng cao cải thiện các kĩ năng</p>
           <a href="" class="nuthire btn btn-primary">Hợp tác</a>
         </div>
+        <div class="xuong"></div>
       </div>
     </div>
     <!-- hết khốitt -->
-    <div class="edu">
+    <div class="edu" id="khoiedu">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 tieudeto text-xl-center">
+          <div class="col-sm-12 tieudeto text-center" id="kn">
             <h1>Kinh nghiệm & Quá tính học</h1>
             <div class="line"></div>
           </div>
-          <div class="col-sm-4 cot1_3 text-sm-right text-xs-center">
+          <div class="col-sm-4 cot1_3 text-sm-right text-center">
             <h2 class="tieudecap2">Quá trình <span class="dam">học</span></h2>
-            <div class="khoithongtin text-sm-right text-xs-center">
+            <div class="khoithongtin text-sm-right text-center">
               <h3 class="tieudecap3">Cao đẳng anh quốc Btec FPT</h3>
               <span class="motaqt">Công nghệ thông tin</span>
               <p>Tốt nghiệp loại Khá, thông thạo tiếng Anh cơ bản</p>
             </div>
-            <div class="khoithongtin text-sm-right text-xs-center">
+            <div class="khoithongtin text-sm-right text-center">
               <h3 class="tieudecap3">Tin học văn phòng</h3>
               <span class="motaqt">Lorem ipsum dolor</span>
               <p>Thành thạo tin học văn phòng</p>
             </div>
-            <div class="khoithongtin text-sm-right text-xs-center">
+            <div class="khoithongtin text-sm-right text-center">
               <h3 class="tieudecap3">Ngôn ngữ HTML & CSS</h3>
               <span class="motaqt">Lorem ipsum dolor</span>
               <p>Hiểu biết cơ bản</p>
             </div>
-            <div class="khoithongtin text-sm-right text-xs-center">
+            <div class="khoithongtin text-sm-right text-center">
               <h3 class="tieudecap3">Java</h3>
               <span class="motaqt">Lorem ipsum dolor</span>
               <p>Hiểu biết cơ bản về lập trình Java</p>
@@ -98,11 +99,11 @@
           <div class="col-sm-4 cot2_3">
             <img src="./img/avata2.jpg" alt="" class="img-fluid" />
           </div>
-          <div class="col-sm-4 cot1_3 text-sm-left text-xs-center">
+          <div class="col-sm-4 cot1_3 text-sm-left text-center">
             <h2 class="tieudecap2">
               Quá trình <span class="dam">làm việc</span>
             </h2>
-            <div class="khoithongtin text-sm-left text-xs-center">
+            <div class="khoithongtin text-sm-left text-center">
               <h3 class="tieudecap3">Nhân viên</h3>
               <span class="motaqt">Sửa chữa máy tính Tuệ Tĩnh</span>
               <p>
@@ -111,7 +112,7 @@
                 • Bán hàng tại cửa hàng
               </p>
             </div>
-            <div class="khoithongtin text-sm-left text-xs-center">
+            <div class="khoithongtin text-sm-left text-center">
               <h3 class="tieudecap3">Thực tập sinh</h3>
               <span class="motaqt"
                 >Công ty cổ phần Công nghệ và Truyền thông TCOM</span
@@ -126,6 +127,16 @@
       </div>
     </div>
     <!-- hết edu -->
+    <div class="sanpham" id="sp">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 tieudeto text-center">
+            <h1>Sản Phẩm</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- thư viện hỗ trợ -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -137,5 +148,21 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // thẻ ul
+      var mainNav = document.getElementById("mainNav");
+      // các thẻ li
+      var listNav = mainNav.getElementsByTagName("li");
+      for (var i = 0; i < listNav.length; i++) {
+        listNav[i].addEventListener("click", function () {
+          // tìm thẻ đang được gắn class active
+          var current = document.querySelector("#mainNav .active");
+          // xóa class active của thẻ đang được gắn
+          current.className = current.className.replace("active", "");
+          // thêm class active vào cho thẻ li được link
+          this.className += "active";
+        });
+      }
+    </script>
   </body>
 </html>
