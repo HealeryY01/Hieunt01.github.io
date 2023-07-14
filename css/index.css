@@ -1,0 +1,48 @@
+*{margin: 0; padding: 0;}
+
+.khoitt1 {
+    height: 100%;
+    width: 100%;
+    background: #e9585f;
+}
+
+.khoitt1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 136px;
+    width: 50%;
+    height: 100%;
+    background: #e4555b;
+}
+@media screen and (max-width:576px) {
+    .khoitt1:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 195px;
+        width: 50%;
+        height: 100%;
+        background: #e4555b;
+    }
+    
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+li.nav-item {
+    margin: 0;
+    padding: 0;
+    margin: 0 17px;
+}
+
+a.nav-link {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #101010;
+}
+
+
